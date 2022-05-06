@@ -3,7 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var moongoose = require('moongoose');
-moongoose.connect('mongodb+srv://usrautos:icoF35@cluster0.mof70.mongodb.net/automovil?retryWrites=true&w=majority', );
+moongoose.connect('mongodb+srv://usrautos:icoF35@cluster0.mof70.mongodb.net/automovil?retryWrites=true&w=majority', {useNewUrlParser:true} );
 
 
 var indexRouter = require('./routes/index');
